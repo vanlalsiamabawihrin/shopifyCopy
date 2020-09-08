@@ -36,12 +36,11 @@ function App() {
     
 
   }, []);
-  console.log("i have a token", token)
   return (
     <div className="app"> 
       {
         token?(
-          <Player/>
+          <Player spotify ={spotify}/>
         ) : (
           <Login/>
         )

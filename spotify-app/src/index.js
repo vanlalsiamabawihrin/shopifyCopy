@@ -4,7 +4,6 @@ import './index.css';
 import App from './App';
 import { DataLayer } from './DataLayer';
 import reducer, {initialState} from './reducer';
-
 import * as serviceWorker from './serviceWorker';
 
 
