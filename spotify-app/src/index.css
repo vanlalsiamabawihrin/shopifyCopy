@@ -1,3 +1,7 @@
+body::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -92,8 +96,16 @@ a:hover{
   padding: 10px;
 
 }
+.sidebar_title{
+  display: flex;
+  padding: 30px 0px 0px 25px;
+
+}
+
 /* This contain style-sheet section for sideBar title Component */
 .sidebarOption{
+  display: flex;
+  align-items: center;
   color:grey;
   height: 40px;
   cursor: pointer;
@@ -102,6 +114,21 @@ a:hover{
 .sidebarOption:hover{
   color: white;
 }
+.sidebarOption_icon{
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.sidebar > hr{
+  border: 1px solid #282828;
+  width: 90%;
+  margin:10px auto;
+}
+.sidebarOption > p{
+  margin: 10px 0px 0px 20px;
+  font-size: 14px;
+  
+}
+
 
 
 
@@ -111,9 +138,62 @@ a:hover{
   position: fixed;
   bottom:0;
   height: 65px;
-  width: 100%;
-  background-color:rgb(5,5,7);
+  width: 97%;
+  background-color:rgb(40,40,40);
   color: white;
-  justify-content: center;
+  justify-content: space-between;
   display: flex;
+  padding: 20px;
+  align-items: center;
+  
+}
+.footer_left{
+  flex:0.3;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 300px;
+}
+
+.footer_center{
+  flex: 0.4;
+  display: flex;
+  align-items: center;
+  padding: 0 100px;
+  justify-content: space-between;
+  max-width: 300px;
+  
+}
+.footer_right{
+  
+  flex:0.3;
+  max-width: 300px;
+  color: white;
+
+}
+.footer_icon{
+  padding: 10px;
+  color:white;
+}
+.footer_albumLogo{
+  height: 60px;
+  width: 60px;
+  margin-right: 20px;
+  object-fit: contain;
+}
+.song_info > h4 {
+  margin-bottom: 12px;
+ 
+} 
+.song_info > p {
+  font-size:12px;
+}
+
+.footer_icon:hover{
+  transition: transform 0.2s ease-in-out;
+  transform: scale(1.2) !important;
+}
+.footer_right *.MuiSlider-root{
+  color:white;
 }
