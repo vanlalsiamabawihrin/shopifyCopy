@@ -65,6 +65,35 @@ a:hover{
   min-height: 100vh;
 }
 
+/* This contain style-sheet section for Footer Component */
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.header_left{
+  align-items: center;
+  display: flex;
+  background-color: white;
+  color: grey;
+  border-radius: 30px;
+  padding: 10px ;
+  flex:0.5;
+  min-width: 70px;
+}
+.header_left > input {
+  border: none;
+  width: 100%;
+}
+.header_right{
+  display: flex;
+  align-items: center;
+}
+.header_right > h4{
+  margin-left:10px;
+}
+
 /* This contain style-sheet section for Body Component */
 
 .player_body{
@@ -74,16 +103,89 @@ a:hover{
   padding: 30px;
   flex:0.8;
   height: 100vh;
+  overflow-y: overlay;
   color: white;
   background: linear-gradient( rgb(91, 87, 115), rgba( 0,0,0,1));
 }
+.body::-webkit-scrollbar{
+  display: none;
+}
+.body_info{
+  display: flex;
+  align-items: flex-end;
+  padding:10px;
+}
+.body_infoText{
+  flex:1;
+}
+.body_infoText > h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+.body_intoText > p{
+  font-size: 14px;
+}
+.body_info > img {
+  height: 20vw;
+  margin: 0 20px;
+  
+}
+.body_icons{
+  display: flex;
+  align-items: center;
+}
+.body_icons > .MuiSvgIcon-root {
+  margin-right: 20px;
+
+}
+.body_shuffle{
+  font-size: 80px !important;
+  margin: 20px 0px 20px 50px;
+}
+
+.body_shuffle:hover {
+  transition: 100ms transform ease-in;
+  transform: scale(1.08);
+}
+.body_songs{
+  margin: 20px -30px;
+}
+
+.songRow{
+  margin-left: 20px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.songRow:hover{
+  cursor: pointer;
+  background-color: black;
+  opacity: 0.8;
+}
+.songRow_info > h1{
+  font-size: 16px;
+}
+.songRow_info > p{
+  font-size: 14px;
+  margin-top: 3px;
+  color: gray;
+}
+.songRow_album{
+  height: 40px;
+  width: 40px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
 
 
 
 /* This contain style-sheet section for Sidebar Component */
 
 .sidebar{
-  min-height: 100vh;
+  height: 100vh;
   min-width: 230px;
   padding: 0px 10px 0px 10px;
   flex:0.2;
@@ -197,3 +299,4 @@ a:hover{
 .footer_right *.MuiSlider-root{
   color:white;
 }
+
